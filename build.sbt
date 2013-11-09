@@ -2,6 +2,8 @@ name := "Siigna applet"
 
 scalaVersion := "2.10.0"
 
+organization := "com.siigna"
+
 crossScalaVersions := Seq("2.10.0", "2.9.2")
 
 version := "1.0"
