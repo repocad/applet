@@ -1,12 +1,14 @@
 name := "Siigna applet"
 
+version := "1.0"
+
 scalaVersion := "2.10.0"
 
 organization := "com.siigna"
 
 crossScalaVersions := Seq("2.10.0", "2.9.2")
 
-version := "1.0"
+seq(LWJGLPlugin.lwjglSettings: _*)
 
 resolvers += "Siigna repository" at "http://rls.siigna.com"
 
