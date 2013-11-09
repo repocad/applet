@@ -8,6 +8,8 @@ version := "1.0"
 
 resolvers += "Siigna repository" at "http://rls.siigna.com"
 
+publishTo := Some(Resolver.sftp("Siigna rls", "80.71.132.98", 12022, "/var/www/public_html") as ("www-data", new File("../budapest/jenkins.rsa")))
+
 libraryDependencies ++= Seq(
   "org.scala-lang" % "scala-actors" % "2.10.0",
   "org.scala-lang" % "scala-library" % "2.10.0",
