@@ -207,8 +207,14 @@ class SiignaApplet extends Applet {
    * @param height  The height of the entire frame
    */
   override def resize(width: Int, height: Int) {
-    super.resize(width, height)
-    View.resize(width, height)
+    try {
+      super.resize(width, height)
+      View.resize(width, height)
+    } catch {
+      case _ : Throwable => {
+        // Can happen when loading applet
+      }
+    }
   }
 
 }
