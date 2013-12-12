@@ -8,8 +8,6 @@ organization := "com.siigna"
 
 crossScalaVersions := Seq("2.10.0", "2.9.2")
 
-seq(LWJGLPlugin.lwjglSettings: _*)
-
 resolvers += "Siigna repository" at "http://rls.siigna.com"
 
 libraryDependencies ++= Seq(
