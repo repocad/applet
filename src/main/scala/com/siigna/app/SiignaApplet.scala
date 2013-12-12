@@ -150,6 +150,10 @@ class SiignaApplet extends Applet {
         paintLoop()
       }
     }.start()
+
+    // Load ITextFonts
+    // TODO: Remove this! It's hideous
+    com.siigna.util.ITextFonts
   }
 
   /**
