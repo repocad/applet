@@ -75,9 +75,6 @@ class SiignaApplet extends Applet {
    * adds EventListeners.
    */
   override def init() {
-    // Init parent - this should be the first line in Siigna... Ever!
-    super.init()
-
     // --- Read the applet parameters --- \\
     try {
       // Gets the active drawing id, if one was selected at www.siigna.com, or None if none was received
